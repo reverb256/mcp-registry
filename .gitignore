@@ -1,0 +1,25 @@
+# Nix
+result
+result-*
+*.drv
+
+# Build artifacts
+/target
+/dist
+/build
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit)
+*.age
+*.key
+.env
+.env.local

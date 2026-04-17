@@ -1,5 +1,10 @@
 # MCP Registry
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Nix Flake](https://img.shields.io/badge/Nix-Flake-5277C3?logo=nixos&logoColor=white)](flake.nix)
+[![Built with Nix](https://img.shields.io/badge/Built%20with-Nix-5277C3?logo=nixos)](https://nixos.org)
+
+
 NixOS module for declaring and managing MCP (Model Context Protocol) servers
 used by AI coding tools (OpenCode, Qwen, Kimi, pi, etc.).
 
