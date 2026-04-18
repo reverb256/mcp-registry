@@ -15,5 +15,17 @@
       nixosModules.default = import ./mcp-servers.nix;
 
       nixosModules.registry = import ./mcp-server-registry.nix;
+
+      devShells.${system}.default = pkgs.mkShell {
+        packages = with pkgs; [
+          nix
+          nixos-rebuild
+          colmena
+          nixfmt
+          nil
+        ];
+
+        NIX_CONFIG = "extra-experimental-features = nix-command flakes";
+      };
     };
 }
